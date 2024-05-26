@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1538;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 700px;
+    background: cyan;
+    animation: rotate 3s linear infinite;
+    border-radius: 5px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #0e1538;
+    inset: 5px;
+    border-radius: 5px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.card h1 {
+    text-shadow: 0 0 10px cyan;
+    color: cyan;
+    z-index: 2;
+    margin-bottom: 120px;
+}
+
+.kucing {
+  position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 128px;
+    background: #0e1538;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 25px cyan;
+    z-index: 3;
+    margin-bottom: 300px;
+}
+
+.kucing::before{
+   content: '';
+    position: absolute;
+    width: 70px;
+    height: 150px;
+    background: cyan;
+    animation: rotate 3s linear infinite;
+    border-radius: 5px;
+}
+
+.kucing::after {
+  content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 5px;
+}
+.kucing img{
+ border-radius: 50%;
+ border: 5px solid #0e1538;
+ width: 115px;
+ height: 115px;
+ z-index: 3;
+  
+}
+
+.tombol {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 3;
+    margin-top: 250px;
+  
+
+}
+
+.tombol h1{
+  
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+  border: 3px solid cyan;
+  box-sizing: border-box;
+  width: max-content;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+ 
+  
+  
+}
+
+.tb{
+ width: 32px;
+ height: 32px;
+
+}
+
+a{
+  text-decoration: none;
+  }
